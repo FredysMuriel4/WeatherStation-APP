@@ -16,7 +16,7 @@ class ConsultationHistory extends Migration
         Schema::create('consultation_history', function (Blueprint $table) {
             $table->id();
             $table->string('ip');
-            $table->string('consult');
+            $table->text('consult');
             $table->timestamps();
         });
     }
